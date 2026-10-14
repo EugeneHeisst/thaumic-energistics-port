@@ -1,0 +1,4 @@
+{
+ "parent": "minecraft:item/generated",
+ "textures": {"layer0": "thaumicenergistics:item/golem_wifi_backpack"}
+}

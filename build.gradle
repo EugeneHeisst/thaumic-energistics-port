@@ -1,0 +1,35 @@
+plugins { id 'java-library'; id 'net.neoforged.moddev' version '2.0.148' }
+version = '0.7.4'
+group = 'dev.eugheist'
+base { archivesName = 'thaumic-energistics-modern' }
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+// Newest locally built tc4modern (the base Thaumcraft 4 port this addon extends).
+def tc4Jar = { ->
+    def jars = fileTree(dir: '../thaumcraft4-modern/build/libs', include: 'tc4modern-*.jar').files
+    def ver = { f -> (f.name =~ /tc4modern-([0-9.]+)\.jar/)[0][1].tokenize('.').collect { it as int } }
+    jars.max { a, b -> def x = ver(a), y = ver(b); for (i in 0..<Math.min(x.size(), y.size())) { if (x[i] != y[i]) return x[i] <=> y[i] }; x.size() <=> y.size() }
+}()
+def ae2Jar = file('related/runtime/appliedenergistics2-19.2.18.jar')
+def guideMeJar = file('related/runtime/guideme-21.1.19.jar')
+
+neoForge {
+    version = '21.1.256'
+    parchment { mappingsVersion = '2024.11.17'; minecraftVersion = '1.21.1' }
+    runs {
+        client { client(); gameDirectory = file('run-client') }
+        auditClient {
+            client()
+            programArguments.addAll '--width', '1080', '--height', '900', '--quickPlaySingleplayer', 'TEInspection'
+            gameDirectory = file('run-audit')
+            systemProperty 'thaumicenergistics.audit', 'true'
+        }
+    }
+    mods { thaumicenergistics { sourceSet sourceSets.main } }
+}
+dependencies {
+    compileOnly files(tc4Jar, ae2Jar, guideMeJar, '/home/eugheist/.local/share/PrismLauncher/instances/1.21.1/minecraft/mods/jei-1.21.1-neoforge-19.57.0.451.jar')
+    runtimeOnly files(tc4Jar, ae2Jar, guideMeJar)
+}
+
+jar { manifest { attributes('Implementation-Version': project.version, 'Implementation-Title': 'Thaumic Energistics') } }

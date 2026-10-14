@@ -1,0 +1,154 @@
+{
+ "textures": {
+  "base": "thaumicenergistics:part/essentia_level_emitter_base",
+  "active": "thaumicenergistics:part/essentia_level_emitter_active",
+  "inactive": "thaumicenergistics:part/essentia_level_emitter_inactive",
+  "particle": "thaumicenergistics:part/essentia_level_emitter_base"
+ },
+ "elements": [
+  {
+   "from": [
+    7,
+    7,
+    3
+   ],
+   "to": [
+    9,
+    9,
+    5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#base"
+    },
+    "south": {
+     "texture": "#base"
+    },
+    "east": {
+     "texture": "#base"
+    },
+    "west": {
+     "texture": "#base"
+    },
+    "up": {
+     "texture": "#base"
+    },
+    "down": {
+     "texture": "#base"
+    }
+   }
+  },
+  {
+   "from": [
+    7,
+    7,
+    1
+   ],
+   "to": [
+    9,
+    9,
+    3
+   ],
+   "faces": {
+    "north": {
+     "texture": "#active",
+     "neoforge_data": {
+      "block_light": 15,
+      "sky_light": 15
+     }
+    },
+    "south": {
+     "texture": "#active",
+     "neoforge_data": {
+      "block_light": 15,
+      "sky_light": 15
+     }
+    },
+    "east": {
+     "texture": "#active",
+     "neoforge_data": {
+      "block_light": 15,
+      "sky_light": 15
+     }
+    },
+    "west": {
+     "texture": "#active",
+     "neoforge_data": {
+      "block_light": 15,
+      "sky_light": 15
+     }
+    },
+    "up": {
+     "texture": "#active",
+     "neoforge_data": {
+      "block_light": 15,
+      "sky_light": 15
+     }
+    },
+    "down": {
+     "texture": "#active",
+     "neoforge_data": {
+      "block_light": 15,
+      "sky_light": 15
+     }
+    }
+   }
+  },
+  {
+   "from": [
+    6.999,
+    6,
+    0
+   ],
+   "to": [
+    9.001,
+    10,
+    4
+   ],
+   "faces": {
+    "east": {
+     "texture": "#active",
+     "neoforge_data": {
+      "block_light": 15,
+      "sky_light": 15
+     }
+    },
+    "west": {
+     "texture": "#active",
+     "neoforge_data": {
+      "block_light": 15,
+      "sky_light": 15
+     }
+    }
+   }
+  },
+  {
+   "from": [
+    6,
+    6.999,
+    0
+   ],
+   "to": [
+    10,
+    9.001,
+    4
+   ],
+   "faces": {
+    "up": {
+     "texture": "#active",
+     "neoforge_data": {
+      "block_light": 15,
+      "sky_light": 15
+     }
+    },
+    "down": {
+     "texture": "#active",
+     "neoforge_data": {
+      "block_light": 15,
+      "sky_light": 15
+     }
+    }
+   }
+  }
+ ]
+}

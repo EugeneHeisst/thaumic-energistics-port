@@ -1,0 +1,9 @@
+{
+  "parent": "ae2:item/display_base",
+  "textures": {
+    "front": "thaumicenergistics:part/essentia_terminal_border",
+    "front_bright": "thaumicenergistics:part/essentia_terminal_light",
+    "front_medium": "thaumicenergistics:part/essentia_terminal_medium",
+    "front_dark": "thaumicenergistics:part/essentia_terminal_dark"
+  }
+}

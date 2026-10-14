@@ -1,0 +1,193 @@
+{
+ "parent": "ae2:item/part_base",
+ "textures": {
+  "face": "thaumicenergistics:part/essentia_import_bus_face",
+  "overlay": "thaumicenergistics:part/essentia_import_bus_overlay",
+  "chamber": "thaumicenergistics:part/essentia_import_bus_chamber",
+  "side": "thaumicenergistics:part/essentia_import_bus_side",
+  "lside": "thaumicenergistics:part/bus_color_side",
+  "lborder": "thaumicenergistics:part/bus_color_border",
+  "light": "thaumicenergistics:part/bus_color_light",
+  "particle": "thaumicenergistics:part/essentia_import_bus_side"
+ },
+ "elements": [
+  {
+   "from": [
+    4,
+    4,
+    6
+   ],
+   "to": [
+    12,
+    12,
+    7
+   ],
+   "faces": {
+    "north": {
+     "texture": "#face"
+    },
+    "south": {
+     "texture": "#side"
+    },
+    "east": {
+     "texture": "#side"
+    },
+    "west": {
+     "texture": "#side"
+    },
+    "up": {
+     "texture": "#side"
+    },
+    "down": {
+     "texture": "#side"
+    }
+   }
+  },
+  {
+   "from": [
+    4,
+    4,
+    7
+   ],
+   "to": [
+    12,
+    12,
+    8
+   ],
+   "faces": {
+    "north": {
+     "texture": "#chamber"
+    },
+    "south": {
+     "texture": "#chamber"
+    },
+    "east": {
+     "texture": "#chamber"
+    },
+    "west": {
+     "texture": "#chamber"
+    },
+    "up": {
+     "texture": "#chamber"
+    },
+    "down": {
+     "texture": "#chamber"
+    }
+   }
+  },
+  {
+   "from": [
+    5,
+    5,
+    8
+   ],
+   "to": [
+    11,
+    11,
+    9
+   ],
+   "faces": {
+    "north": {
+     "texture": "#chamber"
+    },
+    "south": {
+     "texture": "#chamber"
+    },
+    "east": {
+     "texture": "#chamber"
+    },
+    "west": {
+     "texture": "#chamber"
+    },
+    "up": {
+     "texture": "#chamber"
+    },
+    "down": {
+     "texture": "#chamber"
+    }
+   }
+  },
+  {
+   "from": [
+    5,
+    5,
+    9
+   ],
+   "to": [
+    11,
+    11,
+    10
+   ],
+   "faces": {
+    "north": {
+     "texture": "#side"
+    },
+    "south": {
+     "texture": "#side"
+    },
+    "east": {
+     "texture": "#side"
+    },
+    "west": {
+     "texture": "#side"
+    },
+    "up": {
+     "texture": "#side"
+    },
+    "down": {
+     "texture": "#side"
+    }
+   }
+  },
+  {
+   "from": [
+    4,
+    4,
+    6
+   ],
+   "to": [
+    12,
+    12,
+    7
+   ],
+   "faces": {
+    "north": {
+     "texture": "#overlay",
+     "tintindex": 1
+    }
+   }
+  },
+  {
+   "from": [
+    6,
+    6,
+    10
+   ],
+   "to": [
+    10,
+    10,
+    11
+   ],
+   "faces": {
+    "north": {
+     "texture": "#lside"
+    },
+    "south": {
+     "texture": "#lside"
+    },
+    "east": {
+     "texture": "#lborder"
+    },
+    "west": {
+     "texture": "#lborder"
+    },
+    "up": {
+     "texture": "#lborder"
+    },
+    "down": {
+     "texture": "#lborder"
+    }
+   }
+  }
+ ]
+}

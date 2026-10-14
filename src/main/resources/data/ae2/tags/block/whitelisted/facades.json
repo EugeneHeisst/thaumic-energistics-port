@@ -1,0 +1,61 @@
+{
+ "replace": false,
+ "values": [
+  {
+   "id": "tc4modern:amber_block",
+   "required": false
+  },
+  {
+   "id": "tc4modern:amber_bricks",
+   "required": false
+  },
+  {
+   "id": "tc4modern:warded_glass",
+   "required": false
+  },
+  {
+   "id": "tc4modern:obsidian_totem",
+   "required": false
+  },
+  {
+   "id": "tc4modern:thaumium_block",
+   "required": false
+  },
+  {
+   "id": "tc4modern:tallow_block",
+   "required": false
+  },
+  {
+   "id": "tc4modern:arcane_stone",
+   "required": false
+  },
+  {
+   "id": "tc4modern:arcane_stone_bricks",
+   "required": false
+  },
+  {
+   "id": "tc4modern:crusted_stone",
+   "required": false
+  },
+  {
+   "id": "tc4modern:ancient_stone",
+   "required": false
+  },
+  {
+   "id": "tc4modern:greatwood_planks",
+   "required": false
+  },
+  {
+   "id": "tc4modern:silverwood_planks",
+   "required": false
+  },
+  {
+   "id": "tc4modern:taint",
+   "required": false
+  },
+  {
+   "id": "tc4modern:flesh_block",
+   "required": false
+  }
+ ]
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "WRW",
+    "RCR",
+    "TTT"
+  ],
+  "key": {
+    "W": {
+      "item": "tc4modern:warded_glass"
+    },
+    "R": {
+      "tag": "c:dusts/redstone"
+    },
+    "T": {
+      "item": "tc4modern:thaumium_ingot"
+    },
+    "C": {
+      "item": "thaumicenergistics:essentia_storage_component_64k"
+    }
+  },
+  "result": {
+    "id": "thaumicenergistics:essentia_cell_64k",
+    "count": 1
+  }
+}

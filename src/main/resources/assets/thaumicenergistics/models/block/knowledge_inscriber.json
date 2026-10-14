@@ -1,0 +1,8 @@
+{
+ "parent": "block/cube_bottom_top",
+ "textures": {
+  "side": "thaumicenergistics:block/knowledge_inscriber_side",
+  "top": "thaumicenergistics:block/knowledge_inscriber_top",
+  "bottom": "thaumicenergistics:block/knowledge_inscriber_bottom"
+ }
+}

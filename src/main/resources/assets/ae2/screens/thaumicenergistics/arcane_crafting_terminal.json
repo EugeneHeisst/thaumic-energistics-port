@@ -1,0 +1,119 @@
+{
+  "$schema": "../schema.json",
+  "includes": [
+    "../terminals/terminal.json"
+  ],
+  "slots": {
+    "CRAFTING_GRID": {
+      "left": 44,
+      "bottom": 153,
+      "grid": "BREAK_AFTER_3COLS"
+    },
+    "THAUMICENERGISTICS_WAND": {
+      "left": 116,
+      "bottom": 153
+    },
+    "THAUMICENERGISTICS_ARCANE_RESULT": {
+      "left": 116,
+      "bottom": 117
+    },
+    "THAUMICENERGISTICS_ARMOR": {
+      "left": 8,
+      "bottom": 162,
+      "grid": "VERTICAL"
+    },
+    "PLAYER_INVENTORY": {
+      "left": 8,
+      "bottom": 81,
+      "grid": "BREAK_AFTER_9COLS"
+    },
+    "PLAYER_HOTBAR": {
+      "left": 8,
+      "bottom": 23,
+      "grid": "HORIZONTAL"
+    }
+  },
+  "text": {
+    "dialog_title": {
+      "text": {
+        "text": ""
+      },
+      "position": {
+        "left": 8,
+        "top": 6
+      }
+    },
+    "player_inventory_title": {
+      "text": {
+        "text": ""
+      },
+      "position": {
+        "left": 8,
+        "bottom": 95
+      }
+    }
+  },
+  "terminalStyle": {
+    "header": {
+      "texture": "guis/thaumicenergistics_arcane_crafting.png",
+      "srcRect": [
+        0,
+        0,
+        195,
+        17
+      ]
+    },
+    "firstRow": {
+      "texture": "guis/thaumicenergistics_arcane_crafting.png",
+      "srcRect": [
+        0,
+        17,
+        195,
+        18
+      ]
+    },
+    "row": {
+      "texture": "guis/thaumicenergistics_arcane_crafting.png",
+      "srcRect": [
+        0,
+        35,
+        195,
+        18
+      ]
+    },
+    "lastRow": {
+      "texture": "guis/thaumicenergistics_arcane_crafting.png",
+      "srcRect": [
+        0,
+        53,
+        195,
+        18
+      ]
+    },
+    "bottom": {
+      "texture": "guis/thaumicenergistics_arcane_crafting.png",
+      "srcRect": [
+        0,
+        71,
+        195,
+        172
+      ]
+    }
+  },
+  "widgets": {
+    "clearCraftingGrid": {
+      "left": 98,
+      "bottom": 154
+    },
+    "swapArmor": {
+      "left": 26,
+      "bottom": 131
+    },
+    "search": {
+      "left": 98,
+      "top": 4,
+      "width": 65,
+      "height": 12
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+ "parent": "ae2:item/part_base",
+ "textures": {
+  "side": "thaumicenergistics:part/arcane_crafting_side",
+  "o1": "thaumicenergistics:part/arcane_crafting_overlay1",
+  "o2": "thaumicenergistics:part/arcane_crafting_overlay2",
+  "o3": "thaumicenergistics:part/arcane_crafting_overlay3",
+  "o4": "thaumicenergistics:part/arcane_crafting_overlay4",
+  "particle": "thaumicenergistics:part/arcane_crafting_side",
+  "lside": "thaumicenergistics:part/bus_color_side",
+  "lborder": "thaumicenergistics:part/bus_color_border",
+  "light": "thaumicenergistics:part/bus_color_light"
+ },
+ "elements": [
+  {
+   "from": [
+    2,
+    2,
+    6
+   ],
+   "to": [
+    14,
+    14,
+    8
+   ],
+   "faces": {
+    "south": {
+     "texture": "#side"
+    },
+    "east": {
+     "texture": "#side"
+    },
+    "west": {
+     "texture": "#side"
+    },
+    "up": {
+     "texture": "#side"
+    },
+    "down": {
+     "texture": "#side"
+    },
+    "north": {
+     "texture": "#o1"
+    }
+   }
+  },
+  {
+   "from": [
+    5,
+    5,
+    8
+   ],
+   "to": [
+    11,
+    11,
+    9
+   ],
+   "faces": {
+    "north": {
+     "texture": "#lside"
+    },
+    "south": {
+     "texture": "#lside"
+    },
+    "east": {
+     "texture": "#lborder"
+    },
+    "west": {
+     "texture": "#lborder"
+    },
+    "up": {
+     "texture": "#lborder"
+    },
+    "down": {
+     "texture": "#lborder"
+    }
+   }
+  }
+ ]
+}

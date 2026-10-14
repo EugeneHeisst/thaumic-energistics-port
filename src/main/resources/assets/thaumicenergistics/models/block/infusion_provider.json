@@ -1,0 +1,117 @@
+{
+ "parent": "block/block",
+ "render_type": "minecraft:translucent",
+ "textures": {
+  "particle": "thaumicenergistics:block/infusion_provider",
+  "base": "thaumicenergistics:block/infusion_provider",
+  "overlay": "thaumicenergistics:block/infusion_provider_overlay"
+ },
+ "elements": [
+  {
+   "from": [
+    0,
+    0,
+    0
+   ],
+   "to": [
+    16,
+    16,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "#base",
+     "cullface": "north"
+    },
+    "south": {
+     "texture": "#base",
+     "cullface": "south"
+    },
+    "east": {
+     "texture": "#base",
+     "cullface": "east"
+    },
+    "west": {
+     "texture": "#base",
+     "cullface": "west"
+    },
+    "up": {
+     "texture": "#base",
+     "cullface": "up"
+    },
+    "down": {
+     "texture": "#base",
+     "cullface": "down"
+    }
+   }
+  },
+  {
+   "from": [
+    0,
+    0,
+    0
+   ],
+   "to": [
+    16,
+    16,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "#overlay",
+     "cullface": "north",
+     "tintindex": 1,
+     "neoforge_data": {
+      "block_light": 15,
+      "sky_light": 15
+     }
+    },
+    "south": {
+     "texture": "#overlay",
+     "cullface": "south",
+     "tintindex": 1,
+     "neoforge_data": {
+      "block_light": 15,
+      "sky_light": 15
+     }
+    },
+    "east": {
+     "texture": "#overlay",
+     "cullface": "east",
+     "tintindex": 1,
+     "neoforge_data": {
+      "block_light": 15,
+      "sky_light": 15
+     }
+    },
+    "west": {
+     "texture": "#overlay",
+     "cullface": "west",
+     "tintindex": 1,
+     "neoforge_data": {
+      "block_light": 15,
+      "sky_light": 15
+     }
+    },
+    "up": {
+     "texture": "#overlay",
+     "cullface": "up",
+     "tintindex": 1,
+     "neoforge_data": {
+      "block_light": 15,
+      "sky_light": 15
+     }
+    },
+    "down": {
+     "texture": "#overlay",
+     "cullface": "down",
+     "tintindex": 1,
+     "neoforge_data": {
+      "block_light": 15,
+      "sky_light": 15
+     }
+    }
+   }
+  }
+ ]
+}

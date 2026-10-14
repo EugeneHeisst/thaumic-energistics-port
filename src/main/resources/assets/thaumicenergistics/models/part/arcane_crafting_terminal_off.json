@@ -1,0 +1,14 @@
+{
+ "textures": {
+  "side": "thaumicenergistics:part/arcane_crafting_side",
+  "o1": "thaumicenergistics:part/arcane_crafting_overlay1",
+  "o2": "thaumicenergistics:part/arcane_crafting_overlay2",
+  "o3": "thaumicenergistics:part/arcane_crafting_overlay3",
+  "o4": "thaumicenergistics:part/arcane_crafting_overlay4",
+  "particle": "thaumicenergistics:part/arcane_crafting_side",
+  "lside": "thaumicenergistics:part/bus_color_side",
+  "lborder": "thaumicenergistics:part/bus_color_border",
+  "light": "thaumicenergistics:part/bus_color_light"
+ },
+ "elements": []
+}

@@ -1,0 +1,11 @@
+{
+ "textures": {
+  "face": "thaumicenergistics:part/vis_interface",
+  "side": "thaumicenergistics:part/vis_interface_side",
+  "particle": "thaumicenergistics:part/vis_interface_side",
+  "lside": "thaumicenergistics:part/bus_color_side",
+  "lborder": "thaumicenergistics:part/bus_color_border",
+  "light": "thaumicenergistics:part/bus_color_light"
+ },
+ "elements": []
+}

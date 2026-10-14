@@ -1,0 +1,9 @@
+{
+ "parent": "block/orientable_with_bottom",
+ "textures": {
+  "front": "thaumicenergistics:block/distillation_encoder_face",
+  "side": "thaumicenergistics:block/knowledge_inscriber_side",
+  "top": "thaumicenergistics:block/knowledge_inscriber_bottom",
+  "bottom": "thaumicenergistics:block/knowledge_inscriber_bottom"
+ }
+}

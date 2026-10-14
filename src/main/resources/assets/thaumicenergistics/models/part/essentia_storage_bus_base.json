@@ -1,0 +1,109 @@
+{
+ "textures": {
+  "face": "thaumicenergistics:part/essentia_storage_bus_face",
+  "overlay": "thaumicenergistics:part/essentia_storage_bus_overlay",
+  "side": "thaumicenergistics:part/essentia_storage_bus_side",
+  "lside": "thaumicenergistics:part/bus_color_side",
+  "lborder": "thaumicenergistics:part/bus_color_border",
+  "light": "thaumicenergistics:part/bus_color_light",
+  "particle": "thaumicenergistics:part/essentia_storage_bus_side"
+ },
+ "elements": [
+  {
+   "from": [
+    1,
+    1,
+    0
+   ],
+   "to": [
+    15,
+    15,
+    1
+   ],
+   "faces": {
+    "north": {
+     "texture": "#face"
+    },
+    "south": {
+     "texture": "#side"
+    },
+    "east": {
+     "texture": "#side"
+    },
+    "west": {
+     "texture": "#side"
+    },
+    "up": {
+     "texture": "#side"
+    },
+    "down": {
+     "texture": "#side"
+    }
+   }
+  },
+  {
+   "from": [
+    4,
+    4,
+    1
+   ],
+   "to": [
+    12,
+    12,
+    2
+   ],
+   "faces": {
+    "north": {
+     "texture": "#side"
+    },
+    "south": {
+     "texture": "#side"
+    },
+    "east": {
+     "texture": "#side"
+    },
+    "west": {
+     "texture": "#side"
+    },
+    "up": {
+     "texture": "#side"
+    },
+    "down": {
+     "texture": "#side"
+    }
+   }
+  },
+  {
+   "from": [
+    6,
+    6,
+    2
+   ],
+   "to": [
+    10,
+    10,
+    3
+   ],
+   "faces": {
+    "north": {
+     "texture": "#lside"
+    },
+    "south": {
+     "texture": "#lside"
+    },
+    "east": {
+     "texture": "#lborder"
+    },
+    "west": {
+     "texture": "#lborder"
+    },
+    "up": {
+     "texture": "#lborder"
+    },
+    "down": {
+     "texture": "#lborder"
+    }
+   }
+  }
+ ]
+}

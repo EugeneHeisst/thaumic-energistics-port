@@ -1,0 +1,74 @@
+{
+ "textures": {
+  "face": "thaumicenergistics:part/vis_interface",
+  "side": "thaumicenergistics:part/vis_interface_side",
+  "particle": "thaumicenergistics:part/vis_interface_side",
+  "lside": "thaumicenergistics:part/bus_color_side",
+  "lborder": "thaumicenergistics:part/bus_color_border",
+  "light": "thaumicenergistics:part/bus_color_light"
+ },
+ "elements": [
+  {
+   "from": [
+    5,
+    5,
+    2
+   ],
+   "to": [
+    11,
+    11,
+    3
+   ],
+   "faces": {
+    "north": {
+     "texture": "#light",
+     "tintindex": 1,
+     "neoforge_data": {
+      "block_light": 15,
+      "sky_light": 15
+     }
+    },
+    "south": {
+     "texture": "#light",
+     "tintindex": 1,
+     "neoforge_data": {
+      "block_light": 15,
+      "sky_light": 15
+     }
+    },
+    "east": {
+     "texture": "#light",
+     "tintindex": 1,
+     "neoforge_data": {
+      "block_light": 15,
+      "sky_light": 15
+     }
+    },
+    "west": {
+     "texture": "#light",
+     "tintindex": 1,
+     "neoforge_data": {
+      "block_light": 15,
+      "sky_light": 15
+     }
+    },
+    "up": {
+     "texture": "#light",
+     "tintindex": 1,
+     "neoforge_data": {
+      "block_light": 15,
+      "sky_light": 15
+     }
+    },
+    "down": {
+     "texture": "#light",
+     "tintindex": 1,
+     "neoforge_data": {
+      "block_light": 15,
+      "sky_light": 15
+     }
+    }
+   }
+  }
+ ]
+}

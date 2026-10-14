@@ -1,0 +1,44 @@
+{
+ "textures": {
+  "face": "thaumicenergistics:part/essentia_export_bus_face",
+  "overlay": "thaumicenergistics:part/essentia_export_bus_overlay",
+  "chamber": "thaumicenergistics:part/essentia_export_bus_chamber",
+  "side": "thaumicenergistics:part/essentia_export_bus_side",
+  "lside": "thaumicenergistics:part/bus_color_side",
+  "lborder": "thaumicenergistics:part/bus_color_border",
+  "light": "thaumicenergistics:part/bus_color_light",
+  "particle": "thaumicenergistics:part/essentia_export_bus_side"
+ },
+ "elements": [
+  {
+   "from": [
+    6,
+    6,
+    0
+   ],
+   "to": [
+    10,
+    10,
+    1
+   ],
+   "faces": {
+    "east": {
+     "texture": "#overlay",
+     "tintindex": 1
+    },
+    "west": {
+     "texture": "#overlay",
+     "tintindex": 1
+    },
+    "up": {
+     "texture": "#overlay",
+     "tintindex": 1
+    },
+    "down": {
+     "texture": "#overlay",
+     "tintindex": 1
+    }
+   }
+  }
+ ]
+}
