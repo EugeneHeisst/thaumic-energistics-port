@@ -1,6 +1,6 @@
 MIT License
 
-Thaumic Energistics PORT is a port of Thaumic Energistics 1.1.3.0 to Minecraft 1.21.1 (NeoForge).
+Thaumic Energistics UNOFFICIAL PORT is a port of Thaumic Energistics 1.1.3.0 to Minecraft 1.21.1 (NeoForge).
 
 Original mod: Thaumic Energistics by Nividica (MIT License).
 Port: Eugene Heist, 2026.
