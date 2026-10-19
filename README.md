@@ -1,4 +1,4 @@
-# Thaumic Energistics PORT
+# Thaumic Energistics UNOFFICIAL PORT
 
 Неофициальный порт аддона **Thaumic Energistics** 1.1.3.0 (автор — Nividica) на **Minecraft 1.21.1 / NeoForge**.
 Связывает Thaumcraft и Applied Energistics 2: эссенция хранится и передаётся в ME-сети.
@@ -11,13 +11,13 @@
 ## Требования
 
 - Minecraft **1.21.1**, NeoForge **21.1.256** или новее
-- [Thaumcraft PORT](https://github.com/EugeneHeisst/thaumcraft-port)
+- [Thaumcraft UNOFFICIAL PORT](https://github.com/EugeneHeisst/thaumcraft-port)
 - Applied Energistics 2 **19.2.18** или новее (и GuideME)
 - Необязательно: JEI (кнопка «+» в магическом терминале), ae2wtlib (магнитная карта для беспроводного магического терминала)
 
 ## Установка
 
-Положите `thaumic-energistics-modern-<версия>.jar` в папку `mods` рядом с Thaumcraft PORT и AE2.
+Положите `thaumic-energistics-modern-<версия>.jar` в папку `mods` рядом с Thaumcraft UNOFFICIAL PORT и AE2.
 
 ## Права
 
