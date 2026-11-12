@@ -23,6 +23,22 @@
 
 Положите `thaumic-energistics-modern-<версия>.jar` в папку `mods` рядом с Thaumcraft UNOFFICIAL PORT и AE2.
 
+## Сборка
+
+Нужна Java 21. В игнорируемую папку `libs/` положите `tc4modern-0.17.179.jar`,
+`appliedenergistics2-19.2.18.jar` и `guideme-21.1.19.jar` либо укажите пути:
+
+```sh
+./gradlew build -Ptc4LocalJar=path/to/tc4modern.jar \
+  -Pae2LocalJar=path/to/appliedenergistics2.jar -PguideMeLocalJar=path/to/guideme.jar
+```
+
+Альтернатива — переменные `TC4_JAR`, `AE2_JAR` и `GUIDEME_JAR`.
+JEI API загружается из официального Maven. Для локальной сборки без доступа
+к Maven передайте `-PjeiLocalJar=path/to/jei.jar` или `JEI_JAR`.
+`-PwithJei=true` дополнительно подключает JEI при запуске клиента;
+по умолчанию JEI нужен только для компиляции интеграции.
+
 ## Права
 
 Оригинал и этот порт распространяются по лицензии MIT, см. `LICENSE.txt`.

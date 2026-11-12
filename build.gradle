@@ -1,17 +1,22 @@
 plugins { id 'java-library'; id 'net.neoforged.moddev' version '2.0.148' }
-version = '0.7.13'
+version = '0.7.14'
 group = 'dev.eugheist'
 base { archivesName = 'thaumic-energistics-modern' }
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 
-// Newest locally built tc4modern (the base Thaumcraft 4 port this addon extends).
-def tc4Jar = { ->
-    def jars = fileTree(dir: '../thaumcraft4-modern/build/libs', include: 'tc4modern-*.jar').files
-    def ver = { f -> (f.name =~ /tc4modern-([0-9.]+)\.jar/)[0][1].tokenize('.').collect { it as int } }
-    jars.max { a, b -> def x = ver(a), y = ver(b); for (i in 0..<Math.min(x.size(), y.size())) { if (x[i] != y[i]) return x[i] <=> y[i] }; x.size() <=> y.size() }
-}()
-def ae2Jar = file('related/runtime/appliedenergistics2-19.2.18.jar')
-def guideMeJar = file('related/runtime/guideme-21.1.19.jar')
+// Local dependency overrides work with an untracked libs/ directory or explicit paths.
+def localJar = { String propertyName, String environmentName, String defaultPath ->
+    def configured = providers.gradleProperty(propertyName)
+        .orElse(providers.environmentVariable(environmentName)).getOrElse(defaultPath)
+    def dependency = file(configured)
+    if (!dependency.isFile()) {
+        throw new GradleException("Missing dependency ${dependency.name}. Set -P${propertyName}=path/to/file.jar or ${environmentName}; see README.md.")
+    }
+    dependency
+}
+def tc4Jar = localJar('tc4LocalJar', 'TC4_JAR', 'libs/tc4modern-0.17.179.jar')
+def ae2Jar = localJar('ae2LocalJar', 'AE2_JAR', 'libs/appliedenergistics2-19.2.18.jar')
+def guideMeJar = localJar('guideMeLocalJar', 'GUIDEME_JAR', 'libs/guideme-21.1.19.jar')
 
 neoForge {
     version = '21.1.256'
@@ -28,8 +33,22 @@ neoForge {
     mods { thaumicenergistics { sourceSet sourceSets.main } }
 }
 dependencies {
-    compileOnly files(tc4Jar, ae2Jar, guideMeJar, '/home/eugheist/.local/share/PrismLauncher/instances/1.21.1/minecraft/mods/jei-1.21.1-neoforge-19.57.0.451.jar')
+    compileOnly files(tc4Jar, ae2Jar, guideMeJar)
     runtimeOnly files(tc4Jar, ae2Jar, guideMeJar)
 }
 
 jar { manifest { attributes('Implementation-Version': project.version, 'Implementation-Title': 'Thaumic Energistics') } }
+
+repositories { maven { url = 'https://maven.blamejared.com'; content { includeGroup 'mezz.jei' } } }
+def localJei = providers.gradleProperty('jeiLocalJar').orElse(providers.environmentVariable('JEI_JAR')).orNull
+dependencies {
+    if (localJei) {
+        def jeiJar = localJar('jeiLocalJar', 'JEI_JAR', localJei)
+        compileOnly files(jeiJar)
+        if (providers.gradleProperty('withJei').getOrElse('false').toBoolean()) runtimeOnly files(jeiJar)
+    } else {
+        compileOnly 'mezz.jei:jei-1.21.1-common-api:19.57.0.451'
+        compileOnly 'mezz.jei:jei-1.21.1-neoforge-api:19.57.0.451'
+        if (providers.gradleProperty('withJei').getOrElse('false').toBoolean()) runtimeOnly 'mezz.jei:jei-1.21.1-neoforge:19.57.0.451'
+    }
+}
